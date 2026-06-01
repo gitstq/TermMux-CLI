@@ -1,0 +1,76 @@
+{
+  "name": "termmux-cli",
+  "version": "1.0.0",
+  "description": "🎛️ TermMux-CLI - 轻量级终端多路复用与AI Agent感知管理器 | Lightweight Terminal Multiplexer with AI Agent Awareness",
+  "keywords": [
+    "terminal",
+    "multiplexer",
+    "tui",
+    "cli",
+    "ai-agent",
+    "workspace",
+    "pane",
+    "productivity",
+    "developer-tools"
+  ],
+  "homepage": "https://github.com/gitstq/TermMux-CLI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitstq/TermMux-CLI"
+  },
+  "author": {
+    "name": "gitstq",
+    "email": "gitstq@example.com",
+    "github": "https://github.com/gitstq"
+  },
+  "license": "MIT",
+  "readme": "README.md",
+  "programming_language": {
+    "python": ">=3.8"
+  },
+  "platform": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "dependencies": {
+    "rich": ">=13.0.0",
+    "psutil": ">=5.9.0"
+  },
+  "optional_dependencies": {
+    "dev": [
+      "pytest>=7.0.0",
+      "pytest-cov>=4.0.0",
+      "black>=23.0.0",
+      "flake8>=6.0.0",
+      "mypy>=1.0.0"
+    ]
+  },
+  "scripts": {
+    "start": "python3 termmux-cli.py",
+    "test": "pytest tests/ -v",
+    "lint": "flake8 src/ --max-line-length=120",
+    "format": "black src/ tests/",
+    "mypy": "mypy src/"
+  },
+  "entry_points": {
+    "console_scripts": [
+      "termmux=termmux-cli:main"
+    ]
+  },
+  "classifiers": [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Terminals"
+  ]
+}
